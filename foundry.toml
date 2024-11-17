@@ -1,6 +1,7 @@
 [profile.default]
 src = "src"
 helpers = "helpers"
+evm_version = "shanghai"
 out = "out"
 libs = ["lib"]
 

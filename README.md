@@ -46,6 +46,8 @@ If you want to know more about me or have any questions, please contact me at an
 - [Level 28: Switch](./script/SwitchSolution.s.sol)
 - [Level 29: HigherOrder](./script/HigherOrderSolution.s.sol)
 - [Level 30: Stake](./script/StakeSolution.s.sol)
+- [Level 31: Impersonator](./script/ImpersonatorSolution.s.sol)
+- [Level 32: MagicAnimalCarousel](./script/MagicAnimalCarouselSolution.s.sol)
 
 ## Getting Started
 
