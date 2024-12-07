@@ -10,7 +10,7 @@ If you want to know more about me or have any questions, please contact me at an
 
 - Email: geoun395@gmail.com
 - Discord: jun0911.dev
-- About me: https://
+- About me: https://jun0911-devprivate.notion.site/About-me-Gunwoo-Jeong-10d95ea211f58077817cf60814c92538
 
 ## Ethernaut All Solves
 
